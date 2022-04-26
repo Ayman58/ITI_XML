@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+
+
+<xs:simpleType name="weekday_name">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="saturday"/>
+        <xs:enumeration value="sunday"/>
+        <xs:enumeration value="monday"/>
+        <xs:enumeration value="tuesday"/>
+        <xs:enumeration value="wednesday"/>
+        <xs:enumeration value="fridayday"/>  
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="weekday_number">
+    <xs:restriction base="xs:integer">
+        <xs:minInclusive value="1"/>
+        <xs:maxInclusive value="7"/> 
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="weekday" type="weekDay">
+    <xs:simpleType>
+        <xs:union memberTypes="weekday_number weekday_name"
+    </xs:simpleType>
+</xs:element>
+</xs:schema>

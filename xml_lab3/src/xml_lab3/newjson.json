@@ -1,0 +1,32 @@
+{
+    "info": {
+        "location": "libraryname",
+        "description": "aymen library",
+        "librarian": "samir" 
+    },
+    "book": [
+        {
+            "title": "book title",
+            "ISBN": "isbn",
+            "author": "author name",
+
+            "preface": "the book preface",
+            "parts": [
+                {
+                    "title": "part title",
+                    "chapter": [
+                        {
+                            "sammery": "chapter sammery",
+                            "section": [
+                                {
+                                    "content": {
+                                        "paragraph": " p_content"
+                                    }
+                                }]
+                        }
+                    ]
+                }
+            ] 
+    }   
+]
+ 

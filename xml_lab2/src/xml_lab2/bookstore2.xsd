@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    
+    <xs:complexType name="bookstore">
+        <xs:sequence>
+            <xs:element name="book" type="book" maxOccurs="unbounded"/>
+        </xs:sequence>
+            
+    </xs:complexType>
+        
+    <xs:complexType name="book">
+        <xs:sequence>
+            <xs:element name="Title" type="xs:string"/>
+            <xs:element name="Author" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="category" type="category" default ="fiction"/>
+        <xs:attribute name="instock" type="instock" default ="false"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="category">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="science"/>
+            <xs:enumeration value="fiction"/>
+        </xs:restriction>
+    </xs:simpleType >
+    <xs:simpleType name="InStock">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="true"/>
+            <xs:enumeration value="false"/>
+        </xs:restriction>
+    </xs:simpleType >
+ 
+    
+    
+    <xs:element name="bookstore" type="bookstore"/>
+</xs:schema>
+

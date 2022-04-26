@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="library.xsd">
+    <info>
+        <location>library location</location>
+        <description>library discription</description>
+        <librarian>librarian name </librarian>
+    </info>    
+    <book title='book title' ISBN='isbn' author='author name'>
+        <preface>the book preface </preface>
+        <parts title='part title '>
+                <chapter title='chapter title'>
+                    <sammery> chapter sammery </sammery>
+                    <section>
+                        <content>
+                            <paragraph> content</paragraph>
+                            <paragraph> content</paragraph>
+                        </content>
+                    </section>
+                         <section>
+                            <content>
+                                <paragraph> content</paragraph>
+                                <paragraph> content</paragraph>
+                            </content>
+                        </section>
+                </chapter>
+                <chapter title='chapter title'>
+                    <sammery> chapter sammery </sammery>
+                    <section>
+                        <content>
+                            <paragraph> content</paragraph>
+                            <paragraph> content</paragraph>
+                        </content>
+                    </section>
+                         <section>
+                            <content>
+                                <paragraph> content</paragraph>
+                                <paragraph> content</paragraph>
+                            </content>
+                        </section>
+                </chapter>
+        </parts>
+         <parts title='part title '>
+                <chapter title='chapter title'>
+                    <sammery> chapter sammery </sammery>
+                        <section>
+                            <content>
+                                <paragraph> content</paragraph>
+                                <paragraph> content</paragraph>
+                            </content>
+                        </section>
+                         <section>
+                            <content>
+                                <paragraph> content</paragraph>
+                                <paragraph> content</paragraph>
+                            </content>
+                        </section>
+                </chapter>
+                <chapter title='chapter title'>
+                    <sammery> chapter sammery </sammery>
+                        <section>
+                            <content>
+                                <paragraph> content</paragraph>
+                                <paragraph> content</paragraph>
+                            </content>
+                        </section>
+                         <section>
+                            <content>
+                                <paragraph> content</paragraph>
+                                <paragraph> content</paragraph>
+                            </content>
+                        </section>
+                </chapter>
+        </parts>
+    </book>
+         
+</library>
+

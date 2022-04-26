@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="libraryd">
+        <xs:sequence>
+            <xs:element name="info" type="info"/>
+            <xs:element name="book" type="book"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="info">
+        <xs:sequence>
+            <xs:element name="location" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="librarian" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="book">
+        <xs:sequence>
+            <xs:element name="preface" type="xs:string"/>
+            <xs:element name="parts" type="part" maxOccurs="unbounded"/>
+       
+        </xs:sequence>
+        <xs:attribute name="title" type="xs:string"/>
+        <xs:attribute name="ISBN" type="xs:string"/>
+        <xs:attribute name="author" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="part">
+        <xs:sequence>
+            <xs:element name="chapter" type="chapter" maxOccurs="unbounded"/>  
+        </xs:sequence>
+        <xs:attribute name="title" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="chapter" >
+        <xs:sequence>
+            <xs:element name="sammery" type="xs:string"/>
+            <xs:element name="section" type="sectiontype" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="title" type="xs:string"/>
+    
+    </xs:complexType>
+    <xs:complexType name="sectiontype" >
+        <xs:sequence>
+            <xs:element name="content" type="content"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="content">
+        <xs:sequence>
+            <xs:element name="paragraph" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="library" type="libraryd"/>
+</xs:schema>
+
+
+
+
+    

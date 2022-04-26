@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<BookStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="bookstore.xsd">
+    <Book>
+        <Title>asdasd</Title>
+        <Author>kajdkajsd</Author>
+        <Date>asdasd</Date>
+        <ISBN>asdasd</ISBN>
+        <publisher>asdasd</publisher>
+    </Book>
+</BookStore>
+
